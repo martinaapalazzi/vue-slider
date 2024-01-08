@@ -15,15 +15,19 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div id="app">
-                    
-                    <div class="item" v-for="elem in slides">
-                        <img :src="elem.image" alt="" />
+
+                    <div>
+                        {{marti}}
+                    </div>
+
+                    <div class="item" v-for="element in slides">
+                        <img :src="element.image" alt="" />
                         <div class="text">
                             <h3>
-                                {{elem.title}}
+                                {{ element.title }}
                             </h3>
                             <p>
-                                {{elem.text}}
+                                {{ element.text }}
                             </p>
                         </div>
                     </div>
@@ -56,7 +60,7 @@
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src="./js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
