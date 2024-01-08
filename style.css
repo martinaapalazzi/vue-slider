@@ -7,11 +7,25 @@
 
 /* BODY */
 
+.slider-wrapper {
+    border: 2px red dotted;
+}
+
 .container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px;
+    border: 5px blue dotted;
+}
+
+.display-img {
+    display: none;
+}
+
+.visible {
+    display: none;
 }
 
 .item {
@@ -19,6 +33,7 @@
     width: 700px;
     height: 300px;
     position: relative;
+    border: 3px green dotted;
 }
 
 .item img {
@@ -69,6 +84,9 @@
     transform: translate(-50%);
     cursor: pointer;
     z-index: 999;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
 }
 
 .next {
@@ -82,7 +100,7 @@ In una versione base si possono usare delle icone
 oppure i caratteri âˆ§ (&and;) e âˆ¨ (&or;)
  */
 
-.prev::after {
+/* .prev::after {
     content: '';
     width: 10px;
     height: 10px;
@@ -107,3 +125,5 @@ oppure i caratteri âˆ§ (&and;) e âˆ¨ (&or;)
     left: 50%;
     transform: translate(-50%) rotate(135deg);
 }
+
+*/
